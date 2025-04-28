@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Audio Samples – BF + iILRMA</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1.0">
+  <style>
+    /* —— Reset & Base —— */
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family:
+        -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+        Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+      background: #f8f9fa;
+      color: #343a40;
+      line-height: 1.6;
+    }
+    .wrapper {
+      max-width: 960px;
+      margin: 3rem auto;
+      padding: 2.5rem;
+      background: #fff;
+      border-radius: 8px;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+    }
+    h1 {
+      font-size: 2.8em;
+      margin-bottom: .75rem;
+      color: #212529;
+      font-weight: 600;
+    }
+    h2 {
+      font-size: 1.3em;
+      margin: 0 0 .5rem;
+      font-weight: 400;
+      color: #6c757d;
+    }
+    .authors p {
+      margin: 0;
+      font-size: .95em;
+      color: #495057;
+    }
+    .conference {
+      font-size: .95em;
+      color: #6c757d;
+      margin: .5rem 0 1.5rem;
+    }
+    .paper-links {
+      margin-bottom: 2rem;
+    }
+    .paper-links a {
+      color: #0056b3;
+      text-decoration: none;
+    }
+    .paper-links a:hover {
+      text-decoration: underline;
+    }
+
+    .audio-section {
+      border-top: 1px solid #e9ecef;
+      padding: 2rem 0 1rem;
+    }
+    .audio-section h3 {
+      font-size: 1.4em;
+      margin: 0 0 1rem;
+      color: #0056b3;
+      font-weight: 500;
+    }
+    .audio-section h3 strong { font-weight: 600 }
+
+    .grid-header, .grid-row {
+      display: grid;
+      grid-template-columns: 1.5fr 3fr 3fr;
+      gap: 1.5rem;
+      align-items: center;
+    }
+    .grid-header {
+      font-weight: 600;
+      color: #495057;
+      border-bottom: 2px solid #dee2e6;
+      padding-bottom: 1rem;
+      margin-bottom: 1rem;
+      font-size: .9em;
+      text-transform: none;
+      letter-spacing: .5px;
+    }
+    .grid-row {
+      padding: .5rem 0;
+      border-bottom: 1px solid #f1f3f5;
+    }
+    .grid-row:last-child {
+      border-bottom: none;
+    }
+    .grid-row span:first-child {
+      font-weight: 500;
+      color: #343a40;
+    }
+    .grid-row audio {
+      width: 100%;
+      height: 38px;
+      border-radius: 4px;
+    }
+
+    .snr-note { 
+      font-size: .85em;
+      color: #6c757d;
+      margin: 0;
+      padding-top: 1.5rem;
+      text-align: left;
+    }
+  </style>
+</head>
+<body>
+  <div class="wrapper">
+    <h1>Audio Samples</h1>
+    <h2>Beamforming informed independent low-rank matrix analysis for sound source enhancement in unmanned aerial vehicles</h2>
+    <div class="authors">
+      <p>Jin Xuan Teh*, Norihiro Takamune†, Hiroshi Saruwatari†, Benjamin Yen*, Michael Kingan* &amp; Yusuke Hioka*</p>
+      <p>* Acoustics & Vibration Research Centre, University of Auckland, Auckland, NZ</p>
+      <p>† The University of Tokyo, Tokyo, Japan</p>
+      <p>‡ Tokyo Institute of Technology, Tokyo, Japan</p>
+    </div>
+    <p class="conference">
+      2024 Asia Pacific Signal and Information Processing Association Annual Summit and Conference (APSIPA ASC)
+    </p>
+
+    <p class="paper-links">
+      Read the full paper:&nbsp;
+      <a href="https://doi.org/10.1109/APSIPAASC63619.2025.10849300" target="_blank">DOI:10.1109/APSIPAASC63619.2025.10849300</a>
+      &nbsp;|&nbsp;
+      <a href="http://www.apsipa2024.org/files/papers/180.pdf" target="_blank">Download PDF</a>
+    </p>
+
+    <section class="audio-section">
+      <h3>80 dBA speech loudness from a <strong>3 m</strong> distance (-19 dB SNR)</h3>
+      <div class="grid-header">
+        <span>Sample</span>
+        <span>Mic #1 input</span>
+        <span>iILRMA output</span>
+      </div>
+      <div class="grid-row">
+        <span>Male #1</span>
+        <audio controls src="audio_samples/3m/3m-80dBA-male-1-mic 1 input.wav"></audio>
+        <audio controls src="audio_samples/3m/3m-80dBA-male-1-iILRMA output.wav"></audio>
+      </div>
+      <div class="grid-row">
+        <span>Female #1</span>
+        <audio controls src="audio_samples/3m/3m-80dBA-female-1-mic 1 input.wav"></audio>
+        <audio controls src="audio_samples/3m/3m-80dBA-female-1-iILRMA output.wav"></audio>
+      </div>
+      <div class="grid-row">
+        <span>Male #2</span>
+        <audio controls src="audio_samples/3m/3m-80dBA-male-2-mic 1 input.wav"></audio>
+        <audio controls src="audio_samples/3m/3m-80dBA-male-2-ilrma output.wav"></audio>
+      </div>
+      <div class="grid-row">
+        <span>Female #2</span>
+        <audio controls src="audio_samples/3m/3m-80dBA-female-2-mic 1 input.wav"></audio>
+        <audio controls src="audio_samples/3m/3m-80dBA-female-2-iILRMA output.wav"></audio>
+      </div>
+    </section>
+
+    <section class="audio-section">
+      <h3>80 dBA speech loudness from a <strong>5 m</strong> distance (-23 dB SNR)</h3>
+      <div class="grid-header">
+        <span>Sample</span>
+        <span>Mic #1 input</span>
+        <span>iILRMA output</span>
+      </div>
+      <div class="grid-row">
+        <span>Male #1</span>
+        <audio controls src="audio_samples/5m/5m-80dBA-male-1-mic 1 input.wav"></audio>
+        <audio controls src="audio_samples/5m/5m-80dBA-male-1-iILRMA output.wav"></audio>
+      </div>
+      <div class="grid-row">
+        <span>Female #1</span>
+        <audio controls src="audio_samples/5m/5m-80dBA-female-1-mic 1 input.wav"></audio>
+        <audio controls src="audio_samples/5m/5m-80dBA-female-1-iILRMA output.wav"></audio>
+      </div>
+      <div class="grid-row">
+        <span>Male #2</span>
+        <audio controls src="audio_samples/5m/5m-80dBA-male-2-mic 1 input.wav"></audio>
+        <audio controls src="audio_samples/5m/5m-80dBA-male-2-iILRMA output.wav"></audio>
+      </div>
+      <div class="grid-row">
+        <span>Female #2</span>
+        <audio controls src="audio_samples/5m/5m-80dBA-female-2-mic 1 input.wav"></audio>
+        <audio controls src="audio_samples/5m/5m-80dBA-female-2-iILRMA output.wav"></audio>
+      </div>
+    </section>
+
+    <p class="snr-note">SNR: signal-to-noise ratio</p>
+  </div>
+</body>
+</html>
